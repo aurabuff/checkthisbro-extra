@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Tools", href: "/tools" },
@@ -29,7 +30,7 @@ export function SiteFooter() {
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "0.5rem",
+                gap: "0.75rem",
                 textDecoration: "none",
                 fontSize: "1.15rem",
                 fontWeight: 700,
@@ -37,7 +38,14 @@ export function SiteFooter() {
                 marginBottom: "0.75rem",
               }}
             >
-              <span style={{ fontSize: "1.5rem" }}>🌀</span> CheckThisBro
+              <Image 
+                src="/logo.png" 
+                alt="CheckThisBro Logo" 
+                width={32} 
+                height={32} 
+                className="rounded-lg shadow-md"
+              />
+              <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">CheckThisBro</span>
             </Link>
             <p
               style={{

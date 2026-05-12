@@ -2,10 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PinoutQuickSearch } from "@/components/projects/pinout-quick-search";
 import { PortfolioGenerator } from "@/components/projects/portfolio-generator";
+import { ResistorCalculator } from "@/components/projects/resistor-calculator";
+import { KMapSolver } from "@/components/projects/kmap-solver";
+import { LedResistorCalculator } from "@/components/projects/led-calculator";
 
 export const metadata: Metadata = {
   title: "Engineering Student Dashboard",
-  description: "Pinout quick-search and portfolio generator tools for ECE students.",
+  description: "Pinout search, resistor calculators, K-Map solver, and portfolio tools for ECE students.",
 };
 
 export default function StudentResourceHubPage() {
@@ -22,11 +25,14 @@ export default function StudentResourceHubPage() {
           </Link>
         </div>
         <p style={{ marginTop: "1rem", maxWidth: "48rem", fontSize: "1rem", lineHeight: 1.7, color: "var(--text-secondary)" }}>
-          Built for ECE students who need fast access to pinout references and a simple portfolio generator.
+          Built for ECE students who need fast access to pinouts, resistor color codes, boolean simplification, and a simple portfolio generator.
         </p>
       </section>
 
       <div style={{ marginTop: "2rem", display: "grid", gap: "2rem" }}>
+        <ResistorCalculator />
+        <LedResistorCalculator />
+        <KMapSolver />
         <PinoutQuickSearch />
         <PortfolioGenerator />
       </div>

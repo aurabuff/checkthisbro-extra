@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const features = [
@@ -33,7 +34,7 @@ const fadeUp = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, delay: i * 0.1, ease: "easeOut" },
+    transition: { duration: 0.6, delay: i * 0.1, ease: "easeOut" as const },
   }),
 };
 
@@ -54,10 +55,14 @@ export default function Home() {
         animate="visible"
         style={{ textAlign: "center", marginBottom: "4rem" }}
       >
-        <motion.p
+        <motion.div
           custom={0}
           variants={fadeUp}
           style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "0.5rem",
             fontSize: "1rem",
             fontWeight: 500,
             color: "var(--text-muted)",
@@ -65,8 +70,9 @@ export default function Home() {
             marginBottom: "1rem",
           }}
         >
-          🌀 Welcome to CheckThisBro
-        </motion.p>
+          <Image src="/logo.png" alt="Logo" width={24} height={24} className="rounded-md shadow-sm" />
+          <span>Welcome to CheckThisBro</span>
+        </motion.div>
 
         <motion.h1
           custom={1}

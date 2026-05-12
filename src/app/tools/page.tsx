@@ -53,6 +53,76 @@ const tools = [
       "Generate a clean HTML/CSS portfolio page with live preview. Fill in your details and copy the code.",
     href: "/tools/portfolio-generator",
   },
+  {
+    icon: "🧪",
+    title: "Regex Tester",
+    description:
+      "Visualize and test regular expressions in real time. See matches highlighted with per-match details.",
+    href: "/tools/regex-tester",
+  },
+  {
+    icon: "🎨",
+    title: "Color Palette Generator",
+    description:
+      "Generate a full shade palette from a single hex color. Export as CSS variables or Tailwind config.",
+    href: "/tools/color-palette",
+  },
+  {
+    icon: "🔑",
+    title: "JWT Decoder",
+    description:
+      "Decode JSON Web Tokens locally and securely. View header, payload, and expiry without sending data anywhere.",
+    href: "/tools/jwt-decoder",
+  },
+  {
+    icon: "⏱️",
+    title: "Pomodoro Timer",
+    description:
+      "Stay focused with timed work sessions. Beautiful circular progress bar, session tracking, and audio alerts.",
+    href: "/tools/pomodoro",
+  },
+  {
+    icon: "📄",
+    title: "GitHub README Generator",
+    description:
+      "Create a stunning GitHub profile README with tech badges, stats cards, and social links in seconds.",
+    href: "/tools/github-readme",
+  },
+  {
+    icon: "📋",
+    title: "Resume Builder",
+    description:
+      "Build a clean, professional resume with live preview. Print or save as PDF with one click.",
+    href: "/tools/resume-builder",
+  },
+  {
+    icon: "🌈",
+    title: "Resistor Calculator",
+    description:
+      "Interactive 4, 5, and 6-band resistor color code calculator with 3D visualization.",
+    href: "/tools/resistor-calculator",
+  },
+  {
+    icon: "🧮",
+    title: "K-Map Solver",
+    description:
+      "Boolean logic simplifier using Karnaugh Maps for 2, 3, and 4 variables.",
+    href: "/tools/kmap-solver",
+  },
+  {
+    icon: "💡",
+    title: "LED Resistor Calculator",
+    description:
+      "Calculate exact and standard resistor values for LEDs with circuit diagram.",
+    href: "/tools/led-calculator",
+  },
+  {
+    icon: "📈",
+    title: "Cubic Bezier Visualizer",
+    description:
+      "Visualize and generate custom CSS cubic-bezier timing functions with live animations.",
+    href: "/tools/cubic-bezier",
+  },
 ];
 
 const fadeUp = {
@@ -60,7 +130,7 @@ const fadeUp = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, delay: i * 0.08, ease: "easeOut" },
+    transition: { duration: 0.5, delay: i * 0.08, ease: "easeOut" as const },
   }),
 };
 

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlappyBird } from "@/components/projects/flappy-bird";
 import { Game2048 } from "@/components/projects/game-2048";
+import { TypingTest } from "@/components/projects/typing-test";
+import { SnakeGame } from "@/components/projects/snake-game";
+import { TetrisGame } from "@/components/projects/tetris-game";
+import { MinesweeperGame } from "@/components/projects/minesweeper-game";
 
 export const metadata: Metadata = {
   title: "Retro Arcade",
-  description: "Play a responsive 2048 game and a Flappy Bird canvas clone inside the browser.",
+  description: "Play 2048, Flappy Bird, Snake, Tetris, Minesweeper, and a Typing Speed Test inside the browser.",
 };
 
 export default function RetroArcadePage() {
@@ -27,9 +31,14 @@ export default function RetroArcadePage() {
       </section>
 
       <div style={{ marginTop: "2rem", display: "grid", gap: "2rem" }}>
+        <TetrisGame />
+        <MinesweeperGame />
         <Game2048 />
         <FlappyBird />
+        <TypingTest />
+        <SnakeGame />
       </div>
     </main>
   );
 }
+

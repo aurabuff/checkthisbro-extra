@@ -25,6 +25,34 @@ const games = [
       "Guide the bouncy red ball through platforming challenges! Jump over obstacles, collect coins, and reach the flag. A retro classic reborn.",
     href: "/games/red-ball",
   },
+  {
+    icon: "⌨️",
+    title: "Typing Speed Test",
+    description:
+      "Test your typing speed with a 60-second challenge! Track WPM, accuracy, and per-character correctness in real time. How fast can you go?",
+    href: "/games/typing-test",
+  },
+  {
+    icon: "🐍",
+    title: "Snake",
+    description:
+      "The timeless classic! Guide the snake to eat food, grow longer, and avoid crashing into walls or yourself. Simple but endlessly fun.",
+    href: "/games/snake",
+  },
+  {
+    icon: "🧱",
+    title: "Tetris",
+    description:
+      "The ultimate block-stacking puzzle! Clear lines and rack up high scores in this fast-paced arcade classic.",
+    href: "/games/tetris",
+  },
+  {
+    icon: "💣",
+    title: "Minesweeper",
+    description:
+      "Clear the grid without detonating any hidden mines! A classic logic and deduction puzzle.",
+    href: "/games/minesweeper",
+  },
 ];
 
 const fadeUp = {
@@ -32,7 +60,7 @@ const fadeUp = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, delay: i * 0.08, ease: "easeOut" },
+    transition: { duration: 0.5, delay: i * 0.08, ease: "easeOut" as const },
   }),
 };
 

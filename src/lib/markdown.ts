@@ -9,7 +9,7 @@ const turndown = new TurndownService({
 
 turndown.addRule("strikethrough", {
   filter: ["del", "s", "strike"],
-  replacement: (content) => `~~${content}~~`,
+  replacement: (content: string) => `~~${content}~~`,
 });
 
 export function convertToMarkdown(input: string, mode: "html" | "text") {

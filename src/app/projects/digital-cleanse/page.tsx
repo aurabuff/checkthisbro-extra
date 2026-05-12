@@ -3,10 +3,11 @@ import Link from "next/link";
 import { ImageResizer } from "@/components/projects/image-resizer";
 import { MetadataStripper } from "@/components/projects/metadata-stripper";
 import { PasswordGenerator } from "@/components/projects/password-generator";
+import { PomodoroTimer } from "@/components/projects/pomodoro-timer";
 
 export const metadata: Metadata = {
   title: "Digital Cleanse Utility",
-  description: "Privacy-focused image and password tools.",
+  description: "Privacy-focused image tools, password generator, and productivity timer.",
 };
 
 export default function DigitalCleansePage() {
@@ -23,7 +24,7 @@ export default function DigitalCleansePage() {
           </Link>
         </div>
         <p style={{ marginTop: "1rem", maxWidth: "48rem", fontSize: "1rem", lineHeight: 1.7, color: "var(--text-secondary)" }}>
-          Privacy-first utilities for stripping metadata, resizing social media images, and generating strong passwords locally.
+          Privacy-first utilities for stripping metadata, resizing social media images, generating strong passwords, and staying focused.
         </p>
       </section>
 
@@ -31,7 +32,9 @@ export default function DigitalCleansePage() {
         <MetadataStripper />
         <ImageResizer />
         <PasswordGenerator />
+        <PomodoroTimer />
       </div>
     </main>
   );
 }
+

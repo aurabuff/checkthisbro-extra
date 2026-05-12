@@ -3,10 +3,14 @@ import Link from "next/link";
 import { GlassmorphismGenerator } from "@/components/projects/glassmorphism-generator";
 import { JsonToTypescript } from "@/components/projects/json-to-typescript";
 import { SvgPathPreviewer } from "@/components/projects/svg-path-previewer";
+import { RegexTester } from "@/components/projects/regex-tester";
+import { ColorPaletteGenerator } from "@/components/projects/color-palette-generator";
+import { JwtDecoder } from "@/components/projects/jwt-decoder";
+import { CubicBezierVisualizer } from "@/components/projects/cubic-bezier-visualizer";
 
 export const metadata: Metadata = {
   title: "Minimalist Dev Playground",
-  description: "Glassmorphism, JSON to TypeScript, and SVG path preview tools for developers.",
+  description: "Glassmorphism, JSON to TypeScript, SVG path preview, Regex Tester, Color Palette, and JWT Decoder tools for developers.",
 };
 
 export default function DeveloperPlaygroundPage() {
@@ -28,10 +32,15 @@ export default function DeveloperPlaygroundPage() {
       </section>
 
       <div style={{ marginTop: "2rem", display: "grid", gap: "2rem" }}>
+        <CubicBezierVisualizer />
         <GlassmorphismGenerator />
         <JsonToTypescript />
         <SvgPathPreviewer />
+        <RegexTester />
+        <ColorPaletteGenerator />
+        <JwtDecoder />
       </div>
     </main>
   );
 }
+

@@ -11,11 +11,16 @@ export const metadata: Metadata = {
   },
   description:
     "Your new go-to spot for free browser tools and games. We've got everything you need to be productive, creative, or just waste some time. No sign-ups, no drama.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "CheckThisBro | Chill Tools & Games That Just Work",
     description:
       "Your new go-to spot for free browser tools and games. We've got everything you need to be productive, creative, or just waste some time.",
     type: "website",
+    images: ["/logo.png"],
   },
 };
 

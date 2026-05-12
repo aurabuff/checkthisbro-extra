@@ -686,3 +686,31 @@ html:not(.dark) .text-cyan-300\/90 {
   color: #0891B2 !important;
 }
 
+html:not(.dark) .text-fuchsia-300\/90 {
+  color: #A855F7 !important;
+}
+
+html:not(.dark) .text-fuchsia-200 {
+  color: #7C3AED !important;
+}
+
+html:not(.dark) .text-sky-200 {
+  color: #0284C7 !important;
+}
+
+html:not(.dark) .text-emerald-300 {
+  color: #047857 !important;
+}
+
+html:not(.dark) .text-red-300 {
+  color: #DC2626 !important;
+}
+
+html:not(.dark) .text-violet-300 {
+  color: var(--gradient-purple) !important;
+}
+
+html:not(.dark) .text-amber-300 {
+  color: #D97706 !important;
+}
+
