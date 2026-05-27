@@ -5,6 +5,13 @@ import { motion } from "framer-motion";
 
 const games = [
   {
+    icon: "🍕",
+    title: "Pac-Man",
+    description:
+      "The retro arcade classic! Guide Pac-Man through the maze, eat all dots and power pellets, and run away from or chase down the ghosts Blinky, Pinky, Inky, and Clyde.",
+    href: "/games/pac-man",
+  },
+  {
     icon: "🎮",
     title: "2048",
     description:

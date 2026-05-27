@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useCallback } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import logoImg from "../../public/logo.png";
 
 const links = [
   { href: "/", label: "Home" },
@@ -26,7 +27,7 @@ export function SiteHeader() {
           {/* ── Logo ── */}
           <Link href="/" className="nav-logo flex items-center gap-3" id="site-logo">
             <Image 
-              src="/logo.png" 
+              src={logoImg} 
               alt="CheckThisBro Logo" 
               width={36} 
               height={36} 

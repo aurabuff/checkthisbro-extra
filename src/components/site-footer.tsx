@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import logoImg from "../../public/logo.png";
 
 const quickLinks = [
   { label: "Tools", href: "/tools" },
@@ -39,7 +40,7 @@ export function SiteFooter() {
               }}
             >
               <Image 
-                src="/logo.png" 
+                src={logoImg} 
                 alt="CheckThisBro Logo" 
                 width={32} 
                 height={32} 

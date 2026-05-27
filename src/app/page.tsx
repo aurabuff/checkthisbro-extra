@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import logoImg from "../../public/logo.png";
 
 const features = [
   {
@@ -70,7 +71,7 @@ export default function Home() {
             marginBottom: "1rem",
           }}
         >
-          <Image src="/logo.png" alt="Logo" width={24} height={24} className="rounded-md shadow-sm" />
+          <Image src={logoImg} alt="Logo" width={24} height={24} className="rounded-md shadow-sm" />
           <span>Welcome to CheckThisBro</span>
         </motion.div>
 
