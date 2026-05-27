@@ -4,10 +4,12 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   devIndicators: false,
   basePath: "/extra",
-  output: "export",
+  output: "standalone",
   images: {
     unoptimized: true,
   },
 };
 
 export default nextConfig;
+
+import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
